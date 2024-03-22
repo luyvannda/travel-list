@@ -1,11 +1,15 @@
-import "./App.css";
+import Form from "./components/Form";
+import PackingList from "./components/PackingList";
+import Stats from "./components/Stats";
+import Logo from "./components/Logo";
 
 function App() {
   return (
     <div>
-      <p className="text-center text-2xl font-semibold text-gray-400 underline">
-        Hello World
-      </p>
+      <Logo />
+      <Form />
+      <PackingList />
+      <Stats />
     </div>
   );
 }
