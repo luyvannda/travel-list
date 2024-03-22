@@ -5,7 +5,7 @@ import Logo from "./components/Logo";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Logo />
       <Form />
       <PackingList />
