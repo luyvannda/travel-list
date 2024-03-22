@@ -1,7 +1,9 @@
 export default function Logo() {
   return (
-    <div>
-      <h1>🌴 Far Away 💼</h1>
-    </div>
+    <>
+      <h1 className="bg-[#f4a226] px-0 py-[2.4rem] text-center text-9xl font-normal uppercase tracking-[-5px]">
+        🌴 Far Away 💼
+      </h1>
+    </>
   );
 }

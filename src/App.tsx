@@ -5,7 +5,7 @@ import Logo from "./components/Logo";
 
 function App() {
   return (
-    <div className="app">
+    <div className="grid h-[100vh] w-full grid-cols-1 grid-rows-1">
       <Logo />
       <Form />
       <PackingList />
