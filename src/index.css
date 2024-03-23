@@ -13,21 +13,6 @@
     @apply text-[2.4rem] font-medium text-[#5a3e2b];
     font-family: "Quicksand", sans-serif;
   }
-
-  /* button */
-
-  select,
-  input {
-    background-color: #ffebb3;
-    color: #5a3e2b;
-    font-family: inherit;
-    border: none;
-    border-radius: 10rem;
-    padding: 1.2rem 3.2rem;
-    font-weight: 700;
-    @apply text-[1.8rem];
-    cursor: pointer;
-  }
 }
 
 @layer components {
@@ -41,11 +26,6 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
-}
-
-.add-form button {
-  text-transform: uppercase;
-  background-color: #76c7ad;
 }
 
 /* .list {
