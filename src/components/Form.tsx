@@ -6,7 +6,7 @@ export default function Form() {
 
   const options: ReactNode = Array.from({ length: 20 }, (current, index) => (
     <option
-      value={index + 1}
+      value={String(index + 1)}
       key={index + 1}
       className=" bg-[#5a3e2b] text-white"
     >
@@ -26,6 +26,7 @@ export default function Form() {
       <h3 className="mr-[1.6rem] text-[2.4rem]">
         What do you need for your 😍 trip?
       </h3>
+
       <select
         className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-[3.2rem] py-[1.2rem] text-[1.8rem] font-bold text-[#5a3e2b]"
         value={quantity}
@@ -33,6 +34,7 @@ export default function Form() {
       >
         {options}
       </select>
+
       <input
         className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-[3.2rem] py-[1.2rem] text-[1.8rem] font-bold text-[#5a3e2b]"
         type="text"
