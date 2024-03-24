@@ -2,7 +2,7 @@ import { ReactNode, useState } from "react";
 
 export default function Form() {
   const [description, setDescription] = useState("");
-  const [quantity, setQuantity] = useState(5);
+  const [quantity, setQuantity] = useState(1);
 
   const options: ReactNode = Array.from({ length: 20 }, (current, index) => (
     <option
@@ -16,6 +16,14 @@ export default function Form() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!description) return;
+
+    const newItem = { description, quantity, packed: false, id: Date.now() };
+    console.log(newItem);
+
+    setDescription("");
+    setQuantity(1);
   };
 
   return (
