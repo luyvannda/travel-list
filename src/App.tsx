@@ -3,12 +3,15 @@ import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
 import Logo from "./components/Logo";
 import { useState } from "react";
+import { initialItemsType } from "./data/initialItems";
+
+type itemsType = initialItemsType;
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<itemsType[]>([]);
 
-  function handleAddItems(item) {
-    setItems((items) => [...items, item]);
+  function handleAddItems(item: itemsType) {
+    setItems((prevItems) => [...prevItems, item]);
     //items here is not the items state
   }
   return (
