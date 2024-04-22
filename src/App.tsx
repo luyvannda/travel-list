@@ -12,13 +12,19 @@ function App() {
 
   function handleAddItems(item: itemsType) {
     setItems((prevItems) => [...prevItems, item]);
-    //items here is not the items state
+    //item here is a parameter for the function and not the state items
   }
+
+  function handleDeleteItem(id: number) {
+    console.log(id);
+    setItems((prevItems) => prevItems.filter((item) => item.id !== id));
+  }
+
   return (
     <div className="grid-rows-auto-rows grid min-h-screen w-full">
       <Logo />
       <Form onAddItems={handleAddItems} />
-      <PackingList items={items} />
+      <PackingList items={items} onDeleteItem={handleDeleteItem} />
       <Stats />
     </div>
   );
