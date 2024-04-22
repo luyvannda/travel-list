@@ -1,6 +1,14 @@
-import { ReactNode, useState } from "react";
+import { FC, ReactNode, useState } from "react";
+import { initialItemsType } from "@/data/initialItems";
 
-export default function Form({ onAddItems }) {
+interface AddItemsFunction {
+  (item: initialItemsType): void;
+}
+interface FormProps {
+  onAddItems: AddItemsFunction;
+}
+
+const Form: FC<FormProps> = ({ onAddItems }) => {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -57,4 +65,6 @@ export default function Form({ onAddItems }) {
       </button>
     </form>
   );
-}
+};
+
+export default Form;
