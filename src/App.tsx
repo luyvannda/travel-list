@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <div className="grid-rows-auto-rows grid min-h-screen w-full">
+    <div className="grid min-h-screen w-full auto-rows-auto">
       <Logo />
       <Form onAddItems={handleAddItems} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} />

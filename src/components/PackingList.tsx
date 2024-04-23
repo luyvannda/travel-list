@@ -11,8 +11,8 @@ interface PackingListProps {
 
 const PackingList: FC<PackingListProps> = ({ items, onDeleteItem }) => {
   return (
-    <div className="flex flex-col items-center justify-between gap-[3.2rem] bg-[#5a3e2b] px-0 py-16 text-[#ffebb3]">
-      <ul className="grid-cols-auto-fit-250 grid w-[80%] content-start justify-center gap-[1.2rem] overflow-hidden">
+    <div className="flex flex-col items-center justify-center bg-[#5a3e2b] p-4 text-[#ffebb3]">
+      <ul className="grid grid-cols-2 gap-8 overflow-hidden md:grid-cols-3">
         {items.map((item) => (
           <Item key={item.id} onDeleteItem={onDeleteItem} item={item} />
         ))}
