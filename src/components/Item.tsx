@@ -12,13 +12,13 @@ interface ItemProps {
 
 const Item: FC<ItemProps> = ({ item, onDeleteItem }) => {
   return (
-    <li className="flex items-center gap-[1.2rem]">
+    <li className="flex items-center gap-2">
       <span className={`${item.packed ? "line-through" : ""}`}>
         {item.quantity} {item.description}
       </span>
       <button
         onClick={() => onDeleteItem(item.id)}
-        className="translate-y-[2px] cursor-pointer p-[0.8rem] text-[1.8rem]"
+        className="translate-y-[2px] cursor-pointer p-2 text-base"
       >
         ❌
       </button>
