@@ -39,14 +39,14 @@ const Form: FC<FormProps> = ({ onAddItems }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="sm:flex-center flex flex-col items-center justify-center gap-[1rem] bg-[#e5771f]"
+      className="sm:flex-center flex flex-col items-center justify-center gap-[1rem] bg-[#e5771f] p-2"
     >
-      <h3 className="mr-[1.6rem] text-[2.8rem]">
+      <h3 className="text-center text-lg font-semibold">
         What do you need for your 😍 trip?
       </h3>
-      <div className="space-x-4">
+      <div className="grid grid-cols-form gap-2">
         <select
-          className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-[3.2rem] py-[1.2rem] text-[1.8rem] font-bold text-[#5a3e2b]"
+          className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-[3.2rem] py-4 font-bold text-[#5a3e2b] lg:text-[1.8rem]"
           value={quantity}
           onChange={(e) => setQuantity(parseInt(e.target.value))}
         >
@@ -54,13 +54,14 @@ const Form: FC<FormProps> = ({ onAddItems }) => {
         </select>
 
         <input
-          className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-[3.2rem] py-[1.2rem] text-[1.8rem] font-bold text-[#5a3e2b]"
+          className="cursor-pointer rounded-[10rem] bg-[#ffebb3] px-4 py-4 font-bold text-[#5a3e2b] lg:text-[1.8rem]"
           type="text"
           placeholder="Item..."
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button className="cursor-pointer rounded-[10rem] bg-[#76c7ad] px-[3.2rem] py-[1.2rem] text-[1.8rem] font-bold uppercase text-[#5a3e2b]">
+
+        <button className="col-span-2 col-start-1 cursor-pointer rounded-[10rem] bg-[#76c7ad] px-[2rem] py-4 font-bold uppercase text-[#5a3e2b] lg:text-[1.8rem]">
           Add
         </button>
       </div>

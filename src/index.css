@@ -5,12 +5,8 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    @apply text-[40%];
-  }
-
   body {
-    @apply text-[2.4rem] font-medium text-[#5a3e2b];
+    @apply font-medium text-[#5a3e2b];
     font-family: "Quicksand", sans-serif;
   }
 }
@@ -18,7 +14,7 @@
 @layer components {
   h1 {
     font-family: "Monoton";
-    word-spacing: 30px;
+    word-spacing: 20px;
   }
 }
 
