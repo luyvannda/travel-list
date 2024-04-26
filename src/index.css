@@ -35,9 +35,3 @@
   font-weight: 700;
   margin: 0 0.8rem;
 }
-
-input[type="checkbox"] {
-  height: 2rem;
-  width: 2rem;
-  accent-color: #e5771f;
-}
