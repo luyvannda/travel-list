@@ -16,8 +16,8 @@ const PackingList: FC<PackingListProps> = ({
   onToggleItem,
 }) => {
   return (
-    <div className="flex min-h-[30vh] flex-col items-center justify-center bg-[#5a3e2b] p-4 text-[#ffebb3]">
-      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 lg:grid-cols-4">
+    <div className="flex min-h-[37vh] flex-col items-center justify-center bg-[#5a3e2b] p-4 text-[#ffebb3]">
+      <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 lg:grid-cols-4 xl:grid-cols-5">
         {items.map((item) => (
           <Item
             key={item.id}
