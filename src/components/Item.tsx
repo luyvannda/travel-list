@@ -21,10 +21,8 @@ const Item: FC<ItemProps> = ({ item, onDeleteItem, onToggleItem }) => {
       <input
         className="h-4 w-4 accent-[#e5771f]"
         type="checkbox"
-        value={item.packed}
-        onChange={() => {
-          onToggleItem;
-        }}
+        checked={item.packed}
+        onChange={() => onToggleItem(item.id)}
       />
       <span className={`${item.packed ? "line-through" : ""}`}>
         {item.quantity} {item.description}
