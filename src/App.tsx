@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div className="grid min-h-screen w-full auto-rows-auto">
+    <div className="grid min-h-screen w-full auto-rows-auto bg-[#76c7ad]">
       <Logo />
       <Form onAddItems={handleAddItems} />
       <PackingList

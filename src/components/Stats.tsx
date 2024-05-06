@@ -8,7 +8,7 @@ interface StatsProp {
 const Stats: FC<StatsProp> = ({ items }) => {
   if (!items.length) {
     return (
-      <footer className="flex-center h-8 bg-[#76c7ad] px-4 py-8 text-center font-bold">
+      <footer className="flex h-8 items-center justify-center bg-[#76c7ad] px-4 py-8 text-center font-bold sm:text-lg">
         <em> Start adding some items to your packing list 🚀</em>
       </footer>
     );
@@ -23,7 +23,7 @@ const Stats: FC<StatsProp> = ({ items }) => {
     percentagePacked % 5 === 0 ? percentagePacked : percentagePacked.toFixed(2);
 
   return (
-    <footer className="flex-center bg-[#76c7ad] px-4 py-[3.2rem] text-center font-bold">
+    <footer className="flex items-center justify-center bg-[#76c7ad] px-4 py-[3.2rem] text-center font-bold sm:text-lg">
       <em>
         {percentagePacked === 100
           ? "You got everything! Ready to go ✈️"
