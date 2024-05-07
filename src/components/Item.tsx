@@ -17,7 +17,7 @@ interface ItemProps {
 
 const Item: FC<ItemProps> = ({ item, onDeleteItem, onToggleItem }) => {
   return (
-    <li className="flex items-center gap-2 sm:text-lg">
+    <li className="flex items-center gap-2 sm:text-lg lg:text-xl">
       <input
         className="h-4 w-4 accent-[#e5771f]"
         type="checkbox"

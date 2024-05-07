@@ -28,6 +28,10 @@ function App() {
     );
   }
 
+  function handleClearList() {
+    setItems([]);
+  }
+
   return (
     <div className="grid min-h-screen w-full auto-rows-auto bg-[#76c7ad]">
       <Logo />
@@ -36,6 +40,7 @@ function App() {
         items={items}
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
+        onClearList={handleClearList}
       />
       <Stats items={items} />
     </div>
