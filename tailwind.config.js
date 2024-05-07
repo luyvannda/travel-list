@@ -20,6 +20,11 @@ module.exports = {
       gridTemplateColumns: {
         form: "auto 1fr",
       },
+
+      gridTemplateRows: {
+        packingList: "1fr auto",
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
