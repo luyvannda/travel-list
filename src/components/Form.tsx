@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from "react";
+import { FC, ReactNode, useEffect, useRef, useState } from "react";
 import { initialItemsType } from "@/data/initialItems";
 
 interface AddItemsFunction {
@@ -12,7 +12,8 @@ const Form: FC<FormProps> = ({ onAddItems }) => {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
-  const options: ReactNode = Array.from({ length: 20 }, (current, index) => (
+  /* we used underscore '_' here with 'current' because we want typescript to ignore the underscore variable that we declared but not directly used.*/
+  const options: ReactNode = Array.from({ length: 20 }, (_current, index) => (
     <option
       value={String(index + 1)}
       key={index + 1}
