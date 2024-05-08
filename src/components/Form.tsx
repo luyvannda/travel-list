@@ -1,4 +1,4 @@
-import { FC, ReactNode, useEffect, useRef, useState } from "react";
+import { FC, ReactNode, useState } from "react";
 import { initialItemsType } from "@/data/initialItems";
 
 interface AddItemsFunction {
